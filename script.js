@@ -84,6 +84,7 @@ function changeSong(toNextSong) {
     playSong()
 }
 
+// updates time on player
 function updateTimes(isDuration) {
     const time = isDuration ? duration : currentTime
     const timeEl = isDuration ? durationEl : currentTimeEl
@@ -96,6 +97,7 @@ function updateTimes(isDuration) {
     }
 }
 
+// Upadates progress bar
 function updateProgressBar(e) {
         updateTimeValues()
         // Update progress bar width
